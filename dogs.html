@@ -1,0 +1,71 @@
+<html>
+
+  <head>
+    <title>INST377 - Dogs</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styling.css" />
+
+    <!-- JS -->
+    <script src="assignment_two.js" defer></script>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/annyang/2.6.1/annyang.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/simple-slider/1.0.0/simpleslider.min.js"></script>
+    
+    <script src="https://dogapi.dog/api/v2/breeds"></script>
+  </head>
+
+  <body>
+    <!-- Navigation -->
+    <nav id="main_nav">
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="stocks.html">Stocks</a></li>
+        <li><a href="dogs.html">Dogs</a></li>
+      </ul>
+    </nav>
+    
+    <!-- Dog Carousel/Slider -->
+    <div id="dog_spot" style="width:612px; height:612px" data-simple-slider></div>
+    
+    <br>
+
+    <!-- Dog Buttons -->
+    <div id="dog_buttons_spot"></div>
+
+    <br>
+
+    <!-- Voice/Listening Feature -->
+    <div class="voice_box">
+      <h1>How to navigate this website using audio</h1>
+      
+      <p>Ensure your microphone is enable to be able to use this feature.</p>
+      
+      <ul>
+
+        <li>Say "hello world" back to you</li>    
+          <ul>
+            <li>Say: "hello"</li>
+          </ul>
+
+        <li>Change the page color</li>
+          <ul>
+            <li>Say: "Change the color to [color]"</li>
+          </ul>        
+        
+        <li>Navigate to another page</li>
+          <ul>
+            <li>Say: Navigate to [page]</li>
+          </ul>
+    
+      </ul>
+      
+      <button class="button-62" id="listening_on" onclick="startListening()">Turn On Listening</button>
+      <button class="button-62" id="listening_off" onclick="stopListening()">Turn Off Listening</button>
+
+    </div>
+
+  </body>
+
+</html>

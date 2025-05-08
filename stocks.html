@@ -1,0 +1,103 @@
+<html>
+
+  <head>
+    <title>INST377 - Stocks</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styling.css" />
+
+    <!-- JS -->
+    <script src="assignment_two.js" defer></script>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/annyang/2.6.1/annyang.min.js"></script>
+
+  </head>
+
+  <body>
+    <!-- Navigation -->
+    <nav id="main_nav">
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="stocks.html">Stocks</a></li>
+        <li><a href="dogs.html">Dogs</a></li>
+      </ul>
+    </nav>
+
+    <!-- Form -->
+    <!-- change "tempFuncName()" when finish function -->
+    <form name="rock_paper_scissors_form" onsubmit="return tempFuncName()">
+
+    <h1>Let's chart some stocks!</h1>
+    
+    <div id="stock_textbox">
+      <label for="stock">Stock:</label>
+      <br>
+      <input type="text" id="stock" maxlength="5" required>
+    </div>
+
+    <select id="choice" name="choice">
+        <option value="thirty_days">30 days</option>
+        <option value="sixty_days">60 days</option>
+        <option value="ninety_days">90 days</option>
+    </select>
+    
+    <br>
+    <br>
+
+    <input type="submit" value="Submit" id="button" class="button-62">
+
+    </form>
+
+    <table>
+        <tr>
+          <th>Ticker</th>
+          <th>Comment Count</th>
+          <th>Sentiment</th>
+        </tr>
+
+        <tr>
+          <td>Temporary</td>
+          <td>Temporary</td>
+          <td>Temporary</td>
+        </tr>
+        
+        <tr>
+          <td>Temporary</td>
+          <td>Temporary</td>
+          <td>Temporary</td>
+        </tr>
+    </table>
+
+    <!-- Voice/Listening Feature -->
+    <div class="voice_box">
+      <h1>How to navigate this website using audio</h1>
+      
+      <p>Ensure your microphone is enable to be able to use this feature.</p>
+      
+      <ul>
+
+        <li>Say "hello world" back to you</li>    
+          <ul>
+            <li>Say: "hello"</li>
+          </ul>
+
+        <li>Change the page color</li>
+          <ul>
+            <li>Say: "Change the color to [color]"</li>
+          </ul>        
+        
+        <li>Navigate to another page</li>
+          <ul>
+            <li>Say: Navigate to [page]</li>
+          </ul>
+    
+      </ul>
+      
+      <button class="button-62" id="listening_on" onclick="startListening()">Turn On Listening</button>
+      <button class="button-62" id="listening_off" onclick="stopListening()">Turn Off Listening</button>
+
+    </div>
+
+  </body>
+
+</html>
